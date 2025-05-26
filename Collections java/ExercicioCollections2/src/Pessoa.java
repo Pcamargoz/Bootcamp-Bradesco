@@ -40,7 +40,7 @@ public class Pessoa implements Comparable<Pessoa> {
     }
     // comparação por altura que faz a organização se a altura for maior ou menor e igual
     // o comparator é uma interface que tem um metodo compare
-    class ComparadorPorAltura implements Comparator<Pessoa> {
+    static class ComparadorPorAltura implements Comparator<Pessoa> {
         @Override
         public int compare(Pessoa p1, Pessoa p2) {
             return Double.compare(p1.getAltura(), p2.getAltura());
